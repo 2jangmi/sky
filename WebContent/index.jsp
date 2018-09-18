@@ -153,7 +153,7 @@
 												<!-- Person -->
 												<div class="col-sm-3">
 													<div class="single-tab-select-box">
-	
+													<p>깃허브 되냐??</p>
 														<h2>인원</h2>
 														<div class="travel-select-icon">
 															<select class="form-control ">
