@@ -1,0 +1,634 @@
+/*====================================
+    Common
+====================================*/
+
+.mb-2r {
+	margin-bottom: 2rem;
+}
+
+/*====================================
+    Header
+====================================*/
+
+.logo a, .logo a:hover, .logo a:focus {
+    color: #444;
+    transition-duration: 0.5s;
+}
+.logo a span {
+    color: #51abf3;
+}
+.main-menu .nav li.active a, .main-menu .nav li a:hover, .main-menu .nav li a:focus{
+    color: #51abf3;
+}
+.main-menu .nav li.active a:before, .main-menu .nav a:hover:before {
+    background: #51abf3;
+}
+.book-btn {
+    border: 1px solid #51abf3;
+    background: #51abf3;
+}
+.book-btn:hover{
+	border: 1px solid #2b96ed;
+	background-color:#2b96ed;
+}
+#sticky-wrapper {
+    background: #fff;
+    /*border-bottom: 1px solid #d9d9d9;*/
+}
+.is-sticky .header-area:after{
+	position: inherit;
+    content: '';
+    background: none;
+    height: 100%;
+    width: 100%;
+	/* background: #fff; */
+}
+.main-menu .nav li a{
+	color:#444;
+}
+.header-dummy{
+	display:none;
+	height:82px;
+	font-size: 0;
+	background-color: #e9e9e9;
+}
+.top-area ,
+.header-area,
+.is-sticky .header-area{
+    position: relative !important;
+    background: #fff;
+}
+
+#air.container {
+    max-width: 1000px;
+    padding:0 10px;
+}
+
+
+/*====================================
+    Top-search-bar
+====================================*/
+
+.top-search-bar{
+	padding: 30px 0;
+	border: 0;
+	background-color: #51abf3;
+}
+.top-search-bar .container {
+    max-width: 1000px;
+}
+.top-search-bar p{
+	color:#fff;
+}
+.search-wrap.clearfix {
+    margin: 3px 0;
+}
+.direct-option{
+	color:#fff;
+}
+.search-option input{
+	width:49%;
+	padding: 10px;
+	border:0;
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 14px;
+	box-sizing: border-box;
+}
+.search-option select{
+	width:49%;
+	margin: 3px 0;
+	border:0;
+    float: left;
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 14px;
+	box-sizing: border-box;
+	box-shadow: none;
+}
+.search-option{
+	width: 40%;
+    padding: 0 1%;
+    margin-left: 0.5%;
+    border-radius: 2px;
+    float: left;
+    background-color: #fff;
+    box-shadow: none;
+}
+.search-option.other-option {
+    width: 20%;
+}
+.search-option.other-option input {
+    width: 100%;
+}
+.search-option select:active,
+.search-option select:focus{
+	box-shadow: none;
+}
+.top-search-bar .btn{
+    width: 18%;
+    float: right;
+    height: 41px;
+    border-radius: 2px;
+    font-weight: 600;
+    color: #444;
+    background-color: #eaf3fa;
+}
+.top-search-bar .btn:hover {
+    color: #fff;
+    background-color: #0087f1;
+    transition-duration: 0.5s;
+}
+
+/*====================================
+    Product-search
+	항공권 검색
+	- main-color: #51abf3
+	- active : #2b96ed
+====================================*/
+
+/* flaot 뒷처리 */
+.clearfix::before{
+	content:"";
+	display:block;
+}
+.clearfix::after{
+	content:"";
+	display:block;
+}
+.container{
+	position:relative;
+}
+
+
+/*====================================
+    Product-list
+	항공권 목록
+====================================*/
+
+.list-section.container {
+    max-width: 1100px;
+    margin-top: 20px;
+}
+p.announc {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+p.announc-sub{
+    color: #828282;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.list-section .product{
+    position: relative;
+    margin-bottom: 20px;
+    padding:20px 10px;
+    border: 2px solid #d9d9d9;
+    border-radius: 4px;
+    background: #fff;
+}
+.list-section .product:hover{
+    border: 2px solid #51abf3;
+    transition-duration: 0.5s;
+}
+.list-section a {
+    width: 100%;
+    height: 100%;
+   /*  padding: 20px 10px; */
+}
+.list-section .flight-box {
+    width: 50%;
+    margin-left: 3%;
+    float: left;
+}
+.list-section .flight-box span {
+    display: block;
+}
+.list-section .flight-info p{
+    width:60px;
+    margin:5px 5px 0;
+    float: left;
+}
+.list-section .flight-info p.airline{ /*아시아나항공*/
+   	width: 175px;
+    padding-left: 85px;
+    margin: 0;
+    line-height: 50px;
+    background: url(../images/airlines/air1.png);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    /* background-size: 32px; */
+}
+.list-section .flight-info p.airline2{ /*대한항공*/
+    background: url(../images/airlines/air2.png);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+.list-section .flight-info p.airline3{ /*진에어*/
+    background: url(../images/airlines/air3.png);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+.list-section .flight-info p.airline4{ /*제주항공*/
+    background: url(../images/airlines/air4.png);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+.list-section .flight-info p.airline5{ /*이스타항공*/
+    background: url(../images/airlines/air5.png);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+.list-section .flight-info p.airline6{ /*에어부산*/
+    background: url(../images/airlines/air6.png);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+.list-section .flight-info p.airline7{ /*티웨이항공*/
+    background: url(../images/airlines/air7.png);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+.list-section .flight-info .dep-info,
+.list-section .flight-info .arr-info {
+    font-size: 18px;
+    color: #333;
+}
+.list-section .flight-info .dep-info{
+    text-align: right;
+}
+.list-section .flight-info .arr-info{
+    text-align: left;
+}
+.list-section .flight-info span.airport,
+.list-section .flight-info .flight-time{
+    display: block;
+    font-size: 12px;
+    color: #495056;
+}
+.list-section .flight-info .flight-time{
+    width: 76px;
+    padding-top: 31px;
+    margin: 0 10px;
+    text-align: center;
+    background: url(https://flights.myrealtrip.com/air/imgs_ibe/mrt/ico/main/ico_via_01.png);
+    background-repeat: no-repeat;
+    background-position: center 14px;
+    background-size: 76px;
+}
+.list-section .flight-info .via{
+    width: auto;
+    margin-top: 5px;
+    line-height: 1.5em;
+    text-align: left;
+}
+.list-section .price-box {
+    width:35%;
+    margin-right: 2%;
+    float:right;
+    color: #666;
+    text-align: right;
+    font-weight: 200;
+}
+.list-section .price-box .box{
+    padding: 10px 10px;
+    margin-bottom: -1px;
+    border: 1px solid #e3e2e2;
+    text-align: left;
+}
+.list-section .price-box .box p {
+    color: #333;
+    font-size: 12px;
+}
+.list-section .price-box a {
+    margin-top: 10px;
+    text-align: right;
+    color: #666;
+}
+.list-section .price-box:first-child a{
+   border-right: 1px solid #ddd;
+}
+.list-section .price-box p.price {
+    font-size: 12px;
+    font-weight: 500;
+    color: #51abf3;
+}
+.list-section .price-box p.price span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4c565d;
+}
+.list-section .price-box p.price span.price {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+/*----------------------
+    선택된 항목
+-----------------------*/
+
+.selected-list{
+	/* border-bottom: 1px dashed #8b9399; */
+}
+.list-section .selected-product {
+    width: 50%;
+    margin-left: 2px;
+    margin-bottom:10px;
+    float: left;
+    padding: 75px 10px 20px 10px;
+    border-radius: 0;
+    border-color: #51abf3;
+}
+.list-section .selected-product:hover{
+    border-color: #51abf3;
+    transition-duration: 0.5s;
+}
+.air-list-section .selected-product:nth-child(2){
+	margin-left:-4px;
+}
+.selected-product .selected {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 50px;
+    color: #367fba;
+   /*  background: url(../images/airlines/cream_pixels_2X.png); */
+    background-size: 160px;
+    background-position: 10px center;
+    border-bottom: 1px dashed #367fba;
+}
+.list-section .selected-product .flight-box {
+    width: 100%;
+    margin-left: 0;
+    float: none;
+}
+.selected-product .price-box{
+	display:none;
+}
+button.btn.reservation-btn {
+    width: 100%;
+    padding: 14px 0;
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #404040;
+    background-color: #d1d4d7;
+}
+button.btn.reservation-btn:after {
+	content:'';
+	height:1px;
+	width:102%;
+	position:absolute;
+	bottom:0;
+	left:-1%;
+	border-bottom: 1px dashed #8b9399;
+}
+button.btn.reservation-btn:hover {
+    color: #ffffff;
+    background-color: #4b8ed0;
+    transition-duration: 0.5s;
+}
+
+
+/*
+ * 반응형
+ *
+ */
+
+@media screen and (max-width:1199px){
+}/*max-width:1199px END*/
+
+@media screen and (max-width:1100px){
+}/*max-width:1100px END*/
+
+@media screen and (max-width:1099px){
+}/*max-width:1099px*/
+
+@media screen and (max-width:1024px){
+}/*max-width:1024px*/
+
+@media screen and (max-width:992px){
+	.list-section .selected-product {
+	    padding: 64px 10px 20px 10px;
+	}
+	.list-section .flight-info p.airline {
+	    width: 100px;
+	    padding-left: 0;
+	    padding-top: 51px;
+	    line-height: 35px;
+	    text-align: center;
+	    background-position: center 0;
+	}
+	.list-section .flight-info p {
+		width:50px;
+	    margin: 21px 5px 0;
+        transition-duration: 0.5s;
+	}
+	.list-section .flight-info .flight-time {
+    	margin: 16px 10px 0;
+   	    transition-duration: 0.5s;
+	}
+}/*max-width:992px END*/
+
+@media screen and (max-width:991px){
+}/*max-width:991px*/
+
+@media screen and (max-width:768px){
+}/*max-width:768px*/
+
+@media screen and (max-width:767px){
+}/*max-width:767px*/
+
+@media screen and (max-width: 660px){
+}/*max-width:660px*/
+
+@media screen and (max-width: 640px){
+}/*max-width:640px*/
+
+@media screen and (max-width: 540px){
+}/*max-width:540px*/
+
+@media screen and (max-width: 480px){
+}/*max-width:480px*/
+
+@media screen and (max-width: 440px){
+}/*max-width:400px*/
+
+@media screen and (max-width:350px){
+}/*max-width:350px*/
+
+@media screen and  (max-width: 320px){
+}/*max-width:320px*/
+
+
+
+
+/*
+ * 숙소 검색 페이지
+ * main-color: #51abf3
+ * active : #2b96ed
+ */
+
+#hotel .search-option {
+    width: 65%;
+}
+#hotel .top-search-bar .btn {
+    width: 34%;
+}
+/* 숙소 검색 목록 */
+.hotel-list-section{
+	margin-top:10px;
+}
+.hotel-list, .map-wrap {
+    width: 50%;
+    float: left;
+}
+.hotel-list {
+    width: 48%;
+    margin-right: 2%;
+}
+.hotel-list-section .map-wrap{
+	text-align: center;
+    height: 700px;
+    background:url(https://ccc.kra.co.kr/down/IRCC/centerMapImg/50029794.png) no-repeat center center;
+    background-size: cover;
+}
+.hotel-list .product{
+	padding: 0 10px 15px;
+    margin-bottom: 15px;
+    border: 0;
+    border-bottom: 1px solid #d9d9d9;
+    border-radius: 0;
+}
+.hotel-list .product:hover{
+	border:0;
+	border-bottom: 1px solid #d9d9d9;
+	transition-duration: 0.5s;
+}
+.hotel-list .product:hover h1.hotel-name{
+	color:#2b96ed;
+	text-decoration: underline;
+	transition-duration: 0.5s;
+}
+.hotel-list .img{
+	width: 28%;
+    max-width: 160px;
+    margin-right: 2%;
+    height: 110px;
+    float: left;
+    /* background: url(https://yaimg.yanolja.com/resize/place/v4/2017/08/20/21/640/59998365d95910.63654612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+.hotel-list .info-wrap{
+	width: 70%;
+    float: left;
+    padding: 21px 0px;
+}
+.hotel-list h1.hotel-name {
+    display: inline;
+    margin-right: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #4c565d;
+}
+.hotel-list p.hits{
+	display: inline;
+    font-size: 13px;
+    font-weight: 300;
+    color: #aaa;
+}
+.hotel-list .address{
+	margin-top: 5px;
+    color: #555;
+    font-weight: 300;
+}
+.hotel-list a.call {
+    padding: 0;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: sans-serif;
+    letter-spacing: -0px;
+    color: #51abf3;
+}
+
+/*====================================
+    Member
+	로그인, 회원가입, 아이디/비밀번호 찾기
+====================================*/
+
+.member-page {
+	margin: 8rem 0;
+}
+
+.member-page .wrapper {
+	border: 1px solid #ccc;
+    padding: 3rem;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.member-page .menu-text {
+	font-weight: 400;
+	color: #7d7d7d;
+	line-height: 1.6;
+}
+
+.member-page .form-control,
+.member-page .btn,
+.member-page .other-menu .btn-custom-outline {
+	height: 40px;
+	margin-bottom: 1.4rem;
+}
+
+.member-page .other-menu {
+	border-top: 1px solid #d6d6d6;
+	padding-top: 3rem;
+	margin-top: 3rem;
+}
+
+.member-page .other-menu .btn-custom-outline {
+	display: block;
+	width: 100%;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	padding: 10px 12px;
+	font-size: 14px;
+	text-decoration: none;
+	color: #6b6b6b;
+	-webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.member-page .other-menu .btn-custom-outline:hover {
+	background: #f3f3f3;
+	text-decoration: none;
+}
+
+.member-page .other-menu a:last-child {
+	margin-bottom: 0;
+}
+
+.member-page .social-menu .foot-icons {
+	margin-top: 3rem;
+}
+
+.social-menu .foot-icon-bg-2 {
+    background: #f53d3d;
+}
+
+.social-menu .foot-icon-bg-3 {
+    background: #1dc800;
+}
